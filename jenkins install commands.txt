@@ -11,5 +11,6 @@ systemctl restart jenkins
 yum install java -y 
 timedateclt set-timezone "Asai/kolkata"
 systemctl restart jenkins
-https://github.com/devops0014/one.git
-https://dlcdn.apache.org/
+https://github.com/devops0014/one.git  --- Mustafa repo
+https://dlcdn.apache.org/ -- for tomcat installation 
+https://github.com/devops0014/all-setups.git  -- need to fork 
