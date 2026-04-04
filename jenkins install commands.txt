@@ -9,4 +9,4 @@ systemctl start jenkins
 systemctl status jenkins
 systemctl restart jenkins
 yum install java -y 
-
+timedateclt set-timezone "Asai/kolkata"
