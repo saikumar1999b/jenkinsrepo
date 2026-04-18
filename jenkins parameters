@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    parameters {
+        choice(
+            name: 'branch',
+            choices: ['azure', 'gcp', 'master', 'oracle', 'main'],
+            description: 'Select Git branch'
+        )
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: "${params.branch}",
+                    url: 'https://github.com/saikumar1999b/one.git'
+            }
+        }
+    }
+}
